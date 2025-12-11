@@ -1,0 +1,13 @@
+nums = [6,5,4,7,8,9,4,3,5,6,7,]
+evens = list(filter(lambda n : n % 2==0,nums))
+print(evens)
+odds = list(filter(lambda n : n%2!=0,nums))
+print(odds)
+evens1= list(map(lambda n : n*2, evens))
+print(evens1)
+evens1= reduce(lambda a,b : a+b, evens)
+print(evens1)
+odds1 = list(map(lambda n:n*3, odds))
+print(odds1)
+odds1= reduce(lambda a,b : a+b, odds)
+print(odds1)
